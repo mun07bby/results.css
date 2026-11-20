@@ -1,0 +1,129 @@
+/* General Page Reset & Layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #222222;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* (a) Page Header & Metadata Bar */
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #006633; /* Makerere Green */
+  margin-top: 15px;
+}
+
+header h2 {
+  font-size: 1.2rem;
+  color: #333333;
+  margin: 8px 0 15px;
+}
+
+.metadata-bar {
+  background-color: #EEEEEE;
+  text-align: center;
+  padding: 12px 20px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #333333;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+
+/* (b) Results Table Styling */
+.table-wrapper {
+  padding: 25px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #dddddd;
+}
+
+/* Table Header Rows */
+thead .title-row th {
+  background-color: #006633;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+thead .col-headers th {
+  background-color: #222222;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Alternating Row Colours: White and #FFF8F4 */
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #FFF8F4;
+}
+
+tbody tr:hover {
+  background-color: #f1ece8;
+}
+
+/* Footer Row (Class Averages) */
+tfoot tr {
+  background-color: #EEEEEE;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* Numeric & Grade Alignment */
+.num, .grade {
+  text-align: center;
+}
+
+/* CSS Colour-Coding for Grades */
+.grade {
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.grade-a {
+  color: #155724;
+  background-color: #d4edda;
+}
+
+.grade-b {
+  color: #004085;
+  background-color: #cce5ff;
+}
+
+.grade-c {
+  color: #856404;
+  background-color: #fff3cd;
+}
